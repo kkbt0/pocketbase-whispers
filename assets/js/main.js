@@ -104,7 +104,7 @@ function getFirstList() {
         // console.log(resdata.items)
         updateHTMl(resdata.items)
         var nowLength = resdata.items.length
-        if (nowLength < limit) { // 返回数据条数小于 limit 则直接移除“加载更多”按钮，中断预加载
+        if (resdata.page==resdata.totalPages) { // 最后一页 直接移除“加载更多”按钮，中断预加载
             document.querySelector("button.button-load").remove()
 			btnRemove = 1
             return
@@ -127,6 +127,7 @@ function getNextList() {
         nextLength = nextDom.length
         page++
         offset = limit * (page - 1)
+        if (page>resdata.totalPages+1) { nextLength  = 0; } // pocketbase 超出页返回最后一页 处理
         if (nextLength < 1) { // 返回数据条数为 0 ，隐藏
             document.querySelector("button.button-load").remove()
 			btnRemove = 1
@@ -367,7 +368,7 @@ window.ViewImage && ViewImage.init('.container img');
 
 
 // Toggle Darkmode
-const localTheme = window.localStorage && window.localStorage.getItem("theme");
+const localTheme = window.localStorage && window.localStorage.getItem("whispers-theme");
 const themeToggle = document.querySelector(".theme-toggle");
 
 if (localTheme) {
@@ -392,7 +393,7 @@ themeToggle.addEventListener("click", () => {
 
     window.localStorage &&
         window.localStorage.setItem(
-            "theme",
+            "whispers-theme",
             document.body.classList.contains("dark-theme") ? "dark-theme" : "light-theme",
         );
 });
