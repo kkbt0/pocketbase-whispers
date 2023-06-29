@@ -65,7 +65,8 @@ if (typeof (memos) !== "undefined") {
 
 var limit = memo.limit
 var memos = memo.host
-var memoUrl = memos
+// PocketBase字段 created
+var memoUrl = memos + "?sort=-created"
 var page = 1,
     offset = 0,
     nextLength = 0,
@@ -93,7 +94,7 @@ if (memoDom) {
 }
 
 function getFirstList() {
-    var memoUrl_first = memoUrl + "?sort=-created&perPage=" + limit;
+    var memoUrl_first = memoUrl + "&perPage=" + limit;
     fetch(memoUrl_first).then(res => res.json()).then(resdata => {
         // Get Memos total count End
         var memosCount = document.getElementById('total');
@@ -120,7 +121,7 @@ function getNextList() {
 	// } else {
 	// 	var memoUrl_next = memoUrl + "&limit=" + limit + "&offset=" + offset;
 	// }
-    var memoUrl_next = memoUrl + "?sort=-created&perPage=" + limit + "&page=" + page;
+    var memoUrl_next = memoUrl + "&perPage=" + limit + "&page=" + page;
     fetch(memoUrl_next).then(res => res.json()).then(resdata => {
         nextDom = resdata.items
         nextLength = nextDom.length

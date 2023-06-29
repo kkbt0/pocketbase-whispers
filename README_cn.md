@@ -9,8 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://memos.top/">Live Demo</a> •
-  <a href="https://eallion.com/memos" target="_blank" rel="noopener noreferrer" class="pure-menu-link">I'm Feeling Lucky ✍</a>
+  <a href="https://kkbt0.github.io/pocketbase-whispers/">Live Demo</a>
 </p>
 
 <p align="center">
