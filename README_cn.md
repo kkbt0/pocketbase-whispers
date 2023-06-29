@@ -1,6 +1,6 @@
 <p align="center"><a href="https://usememos.com"><img height="64px" src="https://raw.githubusercontent.com/eallion/memos.top/main/assets/img/logo-full.webp" alt="✍️ memos" /></a></p>
 
-<p align="center">Memos Top. 通过 PocketBase API 渲染的静态网页.</p>
+<p align="center">Memos Top. 通过 PocketBase API 渲染 memos/microblogs 的静态网页.</p>
 <p align="center">简单的 HTML、纯净的 CSS、原生的 JS。反框架设计。</p>
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://kkbt0.github.io/pocketbase-whispers/">Live Demo</a>
+  <a href="https://pocketbase-whispers-kkbt.vercel.app/">Live Demo</a>
 </p>
 
 <p align="center">

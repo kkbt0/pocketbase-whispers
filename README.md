@@ -1,6 +1,6 @@
 <p align="center"><a href="https://usememos.com"><img height="64px" src="https://raw.githubusercontent.com/eallion/memos.top/main/assets/img/logo-full.webp" alt="✍️ memos" /></a></p>
 
-<p align="center">Memos Top. A static page rendered with the Memos API.</p>
+<p align="center">Memos Top. A static page rendered memos/microblogs with the Memos API.</p>
 <p align="center">Simple HTML, Pure CSS, Vanilla JS. Anti-Framework.</p>
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://kkbt0.github.io/pocketbase-whispers/">Live Demo</a>
+  <a href="https://pocketbase-whispers-kkbt.vercel.app/">Live Demo</a>
 </p>
 
 <p align="center">
