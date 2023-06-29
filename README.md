@@ -24,7 +24,7 @@ English | [中文](./README_cn.md)
 > • Darkmode Support
 > • Mobile Friendly
 
-- [**Memos**](https://github.com/usememos/memos)
+- [**PocketBase**](https://pocketbase.io/)
 - [Highlight.js](https://github.com/highlightjs/highlight.js)
 - [Markedjs](https://github.com/markedjs/marked)
 - [Moment](https://github.com/moment/moment)
@@ -46,11 +46,10 @@ Replace the default value in `index.html`:
 ```html
     <script type="text/javascript">
         var memos = {
-            host: 'https://demo.usememos.com/',  // Your Memos, with '/' end.
+            host: 'https://pocketbase.io/api/collections/posts/records',  // Your Memos, with '/' end.
             limit: '10',  // Pagination to show.
-            creatorId: '1',  // The old instance is 101, and the new instance is 1.
             domId: '#memos',  // Default #memos.
-            username: 'memos',  // You can customize the display ID that is not related to memos.
+            username: 'Pocketbase',  // You can customize the display ID that is not related to memos.
             name: 'Official Demo',  // You can customize the displayed full name, that is not related to memos.
         }
 

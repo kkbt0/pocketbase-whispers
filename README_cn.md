@@ -1,6 +1,6 @@
 <p align="center"><a href="https://usememos.com"><img height="64px" src="https://raw.githubusercontent.com/eallion/memos.top/main/assets/img/logo-full.webp" alt="✍️ memos" /></a></p>
 
-<p align="center">Memos Top. 通过 Memos API 渲染的静态网页.</p>
+<p align="center">Memos Top. 通过 PocketBase API 渲染的静态网页.</p>
 <p align="center">简单的 HTML、纯净的 CSS、原生的 JS。反框架设计。</p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 > • 暗黑模式适配
 > • 移动端自适应
 
-- [**Memos**](https://github.com/usememos/memos)
+- [**PocketBase**](https://pocketbase.io/)
 - [Highlight.js](https://github.com/highlightjs/highlight.js)
 - [Markedjs](https://github.com/markedjs/marked)
 - [Moment](https://github.com/moment/moment)
@@ -46,12 +46,11 @@ git clone https://github.com/eallion/memos.top
 ```html
     <script type="text/javascript">
         var memos = {
-            host: 'https://demo.usememos.com/',  // 修改为自己部署 Memos 的网址，末尾有 / 斜杠。
-            limit: '10',  // 每页显示的条数，默认显示 10 条。
-            creatorId: '1',  // 老的实例是 101，新的实例是1。 https://demo.usememos.com/u/1
-            domId: '#memos',  // 默认为 #memos ，一般不用修改。
-            username: 'memos',  // 自定义显示在前端的 ID。
-            name: 'Official Demo',  // 自定义显示在前端的全名。
+            host: 'https://pocketbase.io/api/collections/posts/records',  // Your Memos, with '/' end.
+            limit: '10',  // Pagination to show.
+            domId: '#memos',  // Default #memos.
+            username: 'Pocketbase',  // You can customize the display ID that is not related to memos.
+            name: 'Official Demo',  // You can customize the displayed full name, that is not related to memos.
         }
 
     </script>

@@ -21,8 +21,7 @@
             <div class="title">Memos</div>
 
             <div class="pages">
-                    <a href="https://github.com/eallion/memos.top" target="_blank" rel="noopener noreferrer" class="">GitHub</a>
-                    <a href="https://eallion.com/memos" target="_blank" rel="noopener noreferrer" class="">I'm Feeling Lucky</a>
+                    <a href="https://github.com/kkbt0/pocketbase-whispers" target="_blank" rel="noopener noreferrer" class="">GitHub</a>
             </div>
 
         </div>
@@ -35,7 +34,13 @@
         <h1>Memos Top</h1>
 
         <blockquote>
-            <p>Je <del>memos</del>, donc je suis - <em>René Descartes fans</em></p>
+            <p>Welcome! This is a demo html page for pocketbase api! You can set your api host on this index.html line 70 . 
+                Example: <br><a href="https://pocketbase.io/api/collections/posts/records">https://pocketbase.io/api/collections/messages/records</a><br>
+                <br>This example use fields <strong>description</strong> and <strong>created</strong> . You can search <strong>PocketBase字段</strong> to find what fields I use in main.js.
+                <br><br>
+                If you want to use this example without mod. You can create your own Collections which have fields <strong>description</strong> and <strong>created</strong> on Pocketbase Admin dashboard UI.
+                And do not forget to set the Collection API Rules List/Search rule empty .
+            </p>
         </blockquote>
 
         <div class="total">Total <span id="total">0</span> Memos 🎉</div>
@@ -54,8 +59,7 @@
         <p>Copyright @
             <script>
                 document.write(new Date().getFullYear())
-            </script><a href="https://eallion.com/" target="_blank" rel="noopener noreferrer" class="hidden">Charles
-                'eallion' Chin</a> All Rights Reserved.
+            </script><a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="hidden">SomeOne</a> All Rights Reserved.
         </p>
 
     </footer>
@@ -63,11 +67,10 @@
     <!-- Your Memos API -->
     <script type="text/javascript">
         var memos = {
-            host: 'https://memos.eallion.com/',  // Your Memos, with '/' end.
+            host: 'https://pocketbase.io/api/collections/posts/records',  // Your Memos, with '/' end.
             limit: '10',  // Pagination to show.
-            creatorId: '102',  // The old instance is 101, and the new instance is 1. 
             domId: '#memos',  // Default #memos.
-            username: 'memos',  // You can customize the display ID that is not related to memos.
+            username: 'Pocketbase',  // You can customize the display ID that is not related to memos.
             name: 'Official Demo',  // You can customize the displayed full name, that is not related to memos.
         }
 
